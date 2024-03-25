@@ -13,7 +13,7 @@ function LocationInput({ value, onChange, handleLocation }) {
   return (
     <form onSubmit={form.onSubmit(({ location }) => handleLocation(location))}>
       <Grid>
-        <Grid.Col span={9}>
+        <Grid.Col span={{ xs: 12, sm: 9 }}>
           <TextInput
             w="100%"
             value={value}
@@ -23,8 +23,8 @@ function LocationInput({ value, onChange, handleLocation }) {
             rightSection={<RiSearchLine />}
           />
         </Grid.Col>
-        <Grid.Col span={3}>
-          <Button fullWidth type="submit">
+        <Grid.Col span={{ xs: 12, sm: 3 }}>
+          <Button fullWidth maw={150} type="submit">
             Search
           </Button>
         </Grid.Col>
