@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { useDebouncedValue } from "@mantine/hooks";
-
 import Weather from "../components/Weather";
 import useWeather from "../data/weather";
 
