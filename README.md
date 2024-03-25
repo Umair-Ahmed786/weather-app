@@ -1,8 +1,13 @@
 # Weather app
 
+## Steps to run on local
+
+- `npm i` Install dependencies (suggested node version 20.9)
+- Update the .env.development file with your API key
+
 ## **Problem Statement**
 
-Create a Simple Weather Dashboard 
+Create a Simple Weather Dashboard
 
 ## **Objective**
 
