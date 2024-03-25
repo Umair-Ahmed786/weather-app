@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Center, Loader } from "@mantine/core";
+import { Box, Center, Loader, Text, Title } from "@mantine/core";
 
 import LocationInput from "./LocationInput";
 
@@ -10,6 +10,7 @@ function Weather({
   setLocationQuery,
   isLoading,
   weatherData,
+  error,
 }) {
   return (
     <div className="WeatherContainer">
@@ -25,7 +26,17 @@ function Weather({
             <Loader type="bars" />
           </Center>
         ) : (
-          <pre>{JSON.stringify(weatherData, null, 2)}</pre>
+          <Box my="xl">
+            <pre>{JSON.stringify(weatherData, null, 2)}</pre>
+            {error ? (
+              <>
+                <Title>{error.response.status}!</Title>
+                <Text tt="uppercase">
+                  {error?.response?.data?.message || error?.message}
+                </Text>
+              </>
+            ) : null}
+          </Box>
         )}
       </Box>
     </div>

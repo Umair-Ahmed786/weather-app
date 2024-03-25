@@ -8,7 +8,7 @@ import useWeather from "../data/weather";
 function WeatherContainer() {
   const [locationQuery, setLocationQuery] = useState("");
   const [location, setLocation] = useState(null);
-  const { weatherData, isLoading } = useWeather({ location });
+  const { weatherData, isLoading, error } = useWeather({ location });
 
   const handleLocation = () => {
     setLocation(locationQuery);
@@ -21,6 +21,7 @@ function WeatherContainer() {
       setLocationQuery={setLocationQuery}
       isLoading={isLoading}
       weatherData={weatherData}
+      error={error}
     />
   );
 }
