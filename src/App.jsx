@@ -1,6 +1,7 @@
 import React from "react";
 
 import { QueryClient, QueryClientProvider } from "react-query";
+import WeatherContainer from "./app/containers/WeatherContainer";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,7 +15,7 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="App">Tanay</div>
+      <WeatherContainer />
     </QueryClientProvider>
   );
 }

@@ -5,6 +5,7 @@ import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
 import App from "./App.jsx";
+import "./styles/global.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
