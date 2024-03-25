@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Weather app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Problem Statement**
 
-## Available Scripts
+Create a Simple Weather Dashboard 
 
-In the project directory, you can run:
+## **Objective**
 
-### `npm start`
+Develop a small web application that displays weather information for a user-selected city. This task primarily evaluates your ability to work with APIs, UI design, and React components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Evaluation Criteria**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Functionality: Does the application work as expected?
+- UI Design: Is the UI user-friendly and visually appealing?
+- Responsiveness: Does the layout adapt well to different screen sizes?
+- Code Quality: Is the code well-structured and clean?
 
-### `npm test`
+## **Requirements**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Framework**: The application should be built using **React**.
+2. **API Integration**: Use a free weather API (like OpenWeatherMap) to fetch weather data.
+3. **User Interface**: The application should have an input field to enter a city name and a submit button.
+4. **Display**: On submission, display the current weather information of the se4. selected city, including temperature, humidity, and weather conditions (sunny, cloudy, etc.).
+5. **Storage**: Use **local storage** to remember the last searched city and its weather information, displaying it when the user revisits the app.
+6. **Responsiveness**: The application should be responsive and provide a good layout on both mobile and desktop screens.
+7. **Error Handling**: Include basic error handling for scenarios like invalid city names or API failures.
 
-### `npm run build`
+## Bonus
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add icons or images representing the current weather condition.
+- Implement a loading state while the weather data is being fetched.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Output**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. URL of the live app (can be hosted on platforms like Vercel, Netlify, or GitHub Pages)
+2. Source code hosted on GitHub, GitLab, or Bitbucket
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note:** While the focus is on frontend skills, good practices in code organization and readability will also be considered.
