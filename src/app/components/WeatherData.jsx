@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import ReactAnimatedWeather from "react-animated-weather";
 import { Center, Grid, Image, Stack, Text, Title } from "@mantine/core";
@@ -61,5 +62,9 @@ function WeatherData({ weatherData }) {
     </>
   );
 }
+
+WeatherData.propTypes = {
+  weatherData: PropTypes.shape({}).isRequired,
+};
 
 export default WeatherData;

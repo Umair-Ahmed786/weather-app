@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { Box, Center, Loader, Text, Title } from "@mantine/core";
 import Lottie from "react-lottie";
@@ -62,5 +63,15 @@ function Weather({
     </div>
   );
 }
+
+Weather.propTypes = {
+  location: PropTypes.string.isRequired,
+  locationQuery: PropTypes.string.isRequired,
+  handleLocation: PropTypes.func.isRequired,
+  setLocationQuery: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  weatherData: PropTypes.shape({}).isRequired,
+  error: PropTypes.shape({}).isRequired,
+};
 
 export default Weather;

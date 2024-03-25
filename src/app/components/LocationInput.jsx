@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { useForm } from "@mantine/form";
 import { Button, Grid, TextInput } from "@mantine/core";
@@ -10,11 +11,13 @@ function LocationInput({ value, onChange, handleLocation }) {
       location: "",
     },
   });
+
   return (
     <form onSubmit={form.onSubmit(({ location }) => handleLocation(location))}>
       <Grid>
         <Grid.Col span={{ xs: 12, sm: 9 }}>
           <TextInput
+            placeholder="Location name"
             w="100%"
             value={value}
             onChange={(e) => {
@@ -32,5 +35,11 @@ function LocationInput({ value, onChange, handleLocation }) {
     </form>
   );
 }
+
+LocationInput.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  handleLocation: PropTypes.func.isRequired,
+};
 
 export default LocationInput;
