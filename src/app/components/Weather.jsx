@@ -11,10 +11,13 @@ import {
   Text,
   Title,
 } from "@mantine/core";
+import Lottie from "react-lottie";
 
 import LocationInput from "./LocationInput";
+import weatherAnimation from "../lottie/weather.json";
 
 function Weather({
+  location,
   locationQuery,
   handleLocation,
   setLocationQuery,
@@ -36,8 +39,24 @@ function Weather({
             <Loader type="bars" />
           </Center>
         ) : (
-          <Box my="xl">
-            {weatherData ? (
+          <Box my="xl" p="lg">
+            {!location && (
+              <>
+                <Lottie
+                  options={{
+                    loop: true,
+                    autoplay: true,
+                    animationData: weatherAnimation,
+                  }}
+                  height={200}
+                  width={200}
+                />
+                <Text size="xl" fw={600}>
+                  Search for location to see it's weather.
+                </Text>
+              </>
+            )}
+            {weatherData && (
               <>
                 <Title>{weatherData?.name}</Title>
                 <Stack gap={0}>
@@ -92,15 +111,15 @@ function Weather({
                   </Text>
                 </Stack>
               </>
-            ) : null}
-            {error ? (
+            )}
+            {error && (
               <>
                 <Title>{error.response.status}!</Title>
                 <Text tt="uppercase">
                   {error?.response?.data?.message || error?.message}
                 </Text>
               </>
-            ) : null}
+            )}
           </Box>
         )}
       </Box>

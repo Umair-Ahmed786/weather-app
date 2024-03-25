@@ -25,7 +25,7 @@ function LocationInput({ value, onChange, handleLocation }) {
         </Grid.Col>
         <Grid.Col span={3}>
           <Button fullWidth type="submit">
-            Submit
+            Search
           </Button>
         </Grid.Col>
       </Grid>

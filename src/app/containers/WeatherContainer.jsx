@@ -16,6 +16,7 @@ function WeatherContainer() {
 
   return (
     <Weather
+      location={location}
       locationQuery={locationQuery}
       handleLocation={handleLocation}
       setLocationQuery={setLocationQuery}
