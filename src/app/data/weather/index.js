@@ -15,7 +15,7 @@ const useWeather = ({ location }) => {
         "weather",
         JSON.stringify({
           ...localData,
-          [location]: response.data,
+          [location.toLowerCase()]: response.data,
         })
       );
       return response.data;
